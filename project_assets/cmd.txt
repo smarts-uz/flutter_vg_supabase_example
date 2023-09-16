@@ -2,3 +2,16 @@
 flutter pub get
 flutter pub outdated
 flutter pub upgrade
+
+// Build the app
+# Development
+$ flutter run --flavor development --target lib/main_development.dart
+
+# Staging
+$ flutter run --flavor staging --target lib/main_staging.dart
+
+# Production
+$ flutter run --flavor production --target lib/main_production.dart
+
+/// run the tests
+$ flutter test --coverage --test-randomize-ordering-seed random
